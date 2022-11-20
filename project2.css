@@ -1,0 +1,192 @@
+/* universal */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* navbar and logo */
+.navbar{
+    display: flex;
+    align-items: center;
+    /* position: sticky; */
+    position: relative;
+    /* top: 1px; */
+}
+.logo img{
+    height: 60px;
+    width: 100px;
+    margin: 0px 15px;
+}
+.logo div{
+    text-align: center;
+    font-family: 'Lobster', cursive; 
+    color: rgb(116, 2, 2);  
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+}
+.navbar ul li{
+   list-style: none;
+   font-family: 'Lobster', cursive;
+}
+.navbar ul li a{
+    text-decoration: none;
+    padding: 5px ;
+    margin: 0px 14px;
+    display: block;
+    font-size: 1.2rem;
+    color: black;
+}
+.navbar ul li a:hover{
+   background-color: white;
+   border-radius: 10px;
+   }
+   .navbar::before{
+       background-color: black;
+       position: absolute;
+       height: 100%;
+       width: 100%;
+       top:0px;
+    left:0px;
+    content: "";
+    z-index: -2;
+    opacity: 0.5;
+   }
+
+   /* home section */
+   .home{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       height: 350px;
+       color:rgb(0, 0, 0);
+   }
+   .home::before{
+    background: url(pizza4.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0px;
+ left:0px;
+ content: "";
+ z-index: -2;
+ opacity: 0.4;
+ height: 429px;
+   }
+   .home div{
+       margin: 43px 0px;
+       padding: 5px;
+       text-align: center;
+    }
+   .home div p{
+       font-size: 1.1rem;
+       font-family: 'Lobster', cursive;
+         }
+   .primary{
+       margin: 8px 0px;
+       font-size: 1.8rem;
+   }
+
+   /* products */
+
+   .products{
+       text-align: center;
+       /* padding: 20px 0px; */
+   }
+   .primary{
+    margin: 8px 0px;
+    font-size: 1.8rem;
+    padding: 12px 0px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    }
+
+   .pizzas{
+       display: flex;
+       flex-direction: row;
+       border: 2px solid red;
+       border-radius: 30px;
+       margin: 20px 20px;
+       background-color: rgb(245 241 241);
+   }
+   .pizzas img{
+       height: 200px;
+       width: 300px;
+       margin: auto 0px;
+   }
+   .flex{
+       text-align: center;
+       margin: 37px;
+       
+   }
+   .flex h2{
+       margin: 10px;
+       font-family: 'Lobster', cursive;
+   }
+   .btn{
+       margin: 10px 0px;
+       background-color: brown;
+       color: white;
+       cursor: pointer;
+    }
+
+    /* sign in */
+
+    .details{
+        position: relative;
+        height: 350px;
+    }
+    
+    .details::before{
+        content: "";
+        position: absolute;
+        background: url(pizza0.jpg) no-repeat center center/cover;
+        height: 100%;
+    width: 100%;
+    top:0px;
+ left:0px;
+ opacity: 0.18;
+
+    }
+    .form2 div{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+        width: 300px;
+        margin: 10px auto;
+    }
+    .form2 div label{
+       font-size: 1.2rem;
+       font-family: 'Lobster', cursive;
+    }
+    .form2 div input{
+       width: 400px;
+       height: 25px;
+       font-size: 1.1rem;
+    }
+
+    /* PARTNERS */
+    
+    .partners{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .partners img{
+        height: 175px;
+        width: 400px;
+    }
+    .partners div {
+        font-size: 1.5rem;    
+        padding: 0px 20px;
+        font-family: 'Lobster', cursive;
+    }
+    /* footer */
+    footer{
+        background-color: rgb(68, 68, 68);
+        color: white;
+        text-align: center;
+        padding: 8px 0px;
+    }
